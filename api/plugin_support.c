@@ -113,6 +113,9 @@ int mambo_register_vm_op_cb(mambo_context *ctx, mambo_callback cb) {
   return __mambo_register_cb(ctx, VM_OP_C, cb);
 }
 
+/*
+  Hook and replace function
+*/
 int mambo_register_function_cb(mambo_context *ctx, char *fn_name,
                                mambo_callback cb_pre, mambo_callback cb_post, int max_args) {
 #ifdef __arm__
